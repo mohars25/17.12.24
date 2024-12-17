@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.3.5' 
+ruby '3.0.2' 
 
 gem 'rails', '~> 8.0.1'
 gem 'sqlite3', '~> 1.5'
@@ -8,6 +8,7 @@ gem 'puma', '~> 6.5.0'
 gem 'sassc-rails', '~> 2.1'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker', '~> 5.0'
+gem 'bundler', '~> 2.0'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.13'
