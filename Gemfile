@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ruby "3.2.0"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.0", ">= 8.0.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -16,7 +18,6 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
-ruby "3.2.0"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -55,7 +56,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem 'faker'
+  gem "faker"
 end
 
 group :test do
