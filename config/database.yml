@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: momo
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: eventbrite_development
+
+test:
+  <<: *default
+  database: eventbrite_test
+
+production:
+  <<: *default
+  database: eventbrite_production
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
