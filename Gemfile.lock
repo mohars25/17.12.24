@@ -70,6 +70,8 @@ GEM
       logger (>= 1.4.2)
       minitest (>= 5.1)
       securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
+      uri (>= 0.13.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.2)
@@ -219,45 +221,76 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.6.2)
       loofah (~> 2.21)
-      nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2)
-    raindrops (0.21.1)
-    rake (13.0.6)
-    rdoc (6.4.0)
-      json (~> 2.0)
-    reline (0.6.0)
-    regexp_parser (2.2.0)
-      treetop (~> 1.6)
-    rubygems-update (3.5.9)
+      nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
+    railties (8.0.1)
+      actionpack (= 8.0.1)
+      activesupport (= 8.0.1)
+      irb (~> 1.13)
+      rackup (>= 1.0.0)
+      rake (>= 12.2)
+      thor (~> 1.0, >= 1.2.2)
+      zeitwerk (~> 2.6)
+    rainbow (3.1.1)
+    rake (13.2.1)
+    rdoc (6.9.1)
+      psych (>= 4.0.0)
+    regexp_parser (2.9.3)
+    reline (0.6.1)
+    rubocop (1.65.0)
+      parallel (~> 1.26)
+      rainbow (>= 3.1)
+      rubocop-ast (~> 1.0)
+      rubocop-rake-0.3.3 (>= 0.3.3)
+    rubocop-ast (1.0.3)
+      parser (>= 3.0.2.0)
+    rubocop-rails (2.17.2)
+      rubocop (~> 1.65)
+      rubocop-rspec (>= 2.7)
+    rubocop-rake (0.5.0)
+      rubocop-ast (~> 1.0)
+    rubocop-rspec (2.14.1)
+      rubocop-ast (~> 1.0)
+      rspec-core (~> 3.10)
+    ruby-progressbar (1.11.1)
+      parallel
     safe_yaml (1.0.5)
-    sassc (2.2.0)
-    sassc-rails (2.2.0)
-      sassc (~> 2.2)
-    selenium-webdriver (4.11.0)
-      childprocess (>= 0.5.9, < 3.0.0)
-      listen (~> 3.1)
-      nokogiri (~> 1.8, >= 1.8.5)
+    sassc (2.0.5)
+    selenium-webdriver (4.9.2)
+      childprocess (>= 0.5.1, < 1.0.0)
       rubyzip (~> 2.0)
-    simplecov (0.25.0)
-    spring (3.0.2)
-      rack (~> 2.0)
-      rake (~> 12.3)
-    spring-watcher-listen (2.0.1)
-      rb-fsevent (~> 0.10)
-    sshkit (1.27.2)
-      net-ssh (>= 7.0)
-    stringio (3.0.2)
-    thor (1.2.1)
-    thread_safe (0.5.3)
-    tzinfo (2.5.0)
-      et-orbi (~> 1.2)
-      zlib
-    turbolinks (5.2.4)
-      turbolinks-source (= 5.2.0)
-    turbolinks-source (5.2.0)
-    tzinfo (2.5.0)
-      zlib
-    unicode-display_width (1.9.0)
-    zeitwerk (2.6.9)
+    spring (3.0.3)
+      actionpack (>= 5.0.0)
+      activesupport (>= 5.0.0)
+    spring-watcher-listen (3.1.0)
+      listen (~> 3.3)
+    sshkit (1.26.0)
+      net-scp (~> 4.0)
+      net-sftp (~> 4.0)
+      net-ssh (>= 5.2, < 8.0)
+    tzinfo (2.1.0)
+    tzinfo-data (1.2024.10)
+      tzinfo (>= 1.0)
+    urllib3 (1.26.15)
+    webdrivers (5.2.0)
+      nokogiri (~> 1.6)
+      rubyzip (~> 1.2)
+
+PLATFORMS
+  x64-mingw-ucrt
+  x86_64-linux
+
+DEPENDENCIES
+  bootsnap
+  capybara
+  dotenv
+  faker
+  jbuilder
+  pg
+  puma
+  rails
+  rubocop
+  sshkit
+  zeitwerk
 
 BUNDLED WITH
-   2.3.26
+   2.4.20
