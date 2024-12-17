@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
-ruby '3.2.3' 
+ruby '3.3.5' 
 
 gem 'rails', '~> 8.0.1'
 gem 'sqlite3', '~> 1.5'
 gem 'puma', '~> 6.5.0'
 gem 'sassc-rails', '~> 2.1'
 gem 'uglifier', '>= 1.3.0'
-gem 'webpacker', '~> 6.0'
+gem 'webpacker', '~> 5.0'
+
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.13'
 
@@ -32,7 +33,7 @@ gem 'activerecord', '~> 8.0'
 gem 'activestorage', '~> 8.0'
 gem 'actiontext', '~> 8.0'
 gem 'actionmailbox', '~> 8.0'
-gem 'sprockets-rails', '~> 4.0'
+gem 'sprockets-rails', '~> 3.5'
 gem 'rails-dom-testing', '~> 2.2'
 gem 'rails-html-sanitizer', '~> 1.6'
 gem 'bootsnap', '>= 1.4', require: false
